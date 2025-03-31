@@ -1,0 +1,81 @@
+.spacer{
+    min-height : 12vh ;
+}
+
+.container{
+    min-height : 86.5vh ;
+    margin-left : 5% ;
+    margin-right : 5% ;
+}
+
+.upper-part{
+    display : flex ;
+    align-items : center ;
+    justify-content : space-between ;
+    column-gap: 1rem;
+}
+
+.profile-img{
+    /* flex-basis : 50% ; */
+    max-width: 6rem;
+    width: 20%;
+}
+
+.info{
+    width : fit-content ;
+    margin-right: 2rem;
+}
+
+.profile-img img{
+    height : 100% ;
+    width : 100% ;
+    border-radius: 50% ;
+}
+
+.profile-videos{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.profile-videos video{
+    height: 20rem;
+    padding: 0.5rem;
+}
+
+.comment-modal{
+    width : 50% ;
+    height : 100% ;
+
+}
+
+/* styles/CustomScroll.module.css */
+.card1 {
+    overflow-y: auto;
+    max-height: 500px;
+  }
+  
+  .card1::-webkit-scrollbar {
+    
+    width: 7px;
+  }
+  
+  .card1::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+  }
+  
+  .card1::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  
+
+@media screen and (max-width:450px) {
+    .info{
+        margin-right: 0;
+       
+    }
+
+    .info .infoText{
+        font-size: 20px;
+    }
+}
